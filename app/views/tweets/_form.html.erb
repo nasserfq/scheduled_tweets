@@ -16,7 +16,8 @@
     <div class= "mb-3">
         <%= form.label :publish_at %>
         <div class ="form-control"> 
-            <%= form.datetime_select :publish_at %>
+            
+            <%= form.Time.now.strftime("%I:00") :publish_at %>
         </div>
     </div>
 
