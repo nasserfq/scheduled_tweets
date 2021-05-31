@@ -16,7 +16,7 @@
     <div class= "mb-3">
         <%= form.label :publish_at %>
         <div class ="form-control"> 
-            <%= form.time_select 'game', 'game_time', {:minute_step => 60, :ampm => true} :publish_at %>
+            <%= form.datetime_select :publish_at %>
             
         </div>
     </div>
