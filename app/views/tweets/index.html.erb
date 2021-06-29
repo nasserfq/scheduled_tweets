@@ -1,12 +1,12 @@
 <div class="d-flex justify-content-between align-items-center">
-  <h1>Tweets</h1>
+  <h1>تغريدات</h1>
 
   <% if Current.user.twitter_accounts.any? %>
-    <%= link_to "Schedule a Tweet جدول تغريدة", new_tweet_path, class: "btn btn-primary" %>
+    <%= link_to "جدول تغريدة", new_tweet_path, class: "btn btn-primary" %>
   <% end %>
 </div>
 
 <% if Current.user.twitter_accounts.none? %>
-  <%= link_to "Connect your Twitter Account", "/auth/twitter", class: "btn btn-primary" %>
+  <%= link_to "اربط حسابك في تويتر", "/auth/twitter", class: "btn btn-primary" %>
 <% end %>
 <%= render @tweets %>
