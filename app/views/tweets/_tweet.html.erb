@@ -4,10 +4,10 @@
     <%= image_tag tweet.twitter_account.image, class: "rounded-circle" %>
     <%= link_to "@#{tweet.twitter_account.username}", "https://twitter.com/#{tweet.twitter_account.username}", target: :_blank %>
      <% if tweet.published? %>
-      <%= link_to "View Tweet استعرض التغريدة ", "https://twitter.com/#{tweet.twitter_account.username}/status/#{tweet.tweet_id}", target: :_blank %>
+      <%= link_to "استعرض التغريدة ", "https://twitter.com/#{tweet.twitter_account.username}/status/#{tweet.tweet_id}", target: :_blank %>
     <% else %>
       Scheduled for <%= l tweet.publish_at, format: :long %>
-      <%= link_to "Edit Tweet عدل التغريدة", edit_tweet_path(tweet) %>
+      <%= link_to "عدل التغريدة", edit_tweet_path(tweet) %>
     <% end %>
   </div>
 </div>
