@@ -1,7 +1,5 @@
-Hi <%= params[:user].email %>,
+السلام عليكم <%= params[:user].email %>,
 
-Someone requested a reset of your password.
-
-If this was you, click the link to reset your password. The link will expire automatically in 15 minutes.
-
-<%= link_to "Reset password إعادة تعيين كلمة المرور", password_reset_edit_url(token: @token) %>
+شخص ما طلب إعادة كلمة المرور.
+إذا هذا أنت ، اضغط على الرابط لإعادة تعيين كلمة المرور. الرابط سينتهي تلقائيا في خلال ١٥ دقيقة.
+<%= link_to "إعادة تعيين كلمة المرور", password_reset_edit_url(token: @token) %>
