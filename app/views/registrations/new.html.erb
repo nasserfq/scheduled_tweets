@@ -1,4 +1,4 @@
-<h1>Sign Up</h1>
+<h1>حساب جديد</h1>
 
 <%= form_with model: @user, url: sign_up_path do |form| %>
 
@@ -10,14 +10,14 @@
   </div>
   <div class="mb-3">
     <%= form.label :password %>
-    <%= form.password_field :password, class: "form-control", placeholder: "password كلمة المرور" %>
+    <%= form.password_field :password, class: "form-control", placeholder: "كلمة المرور" %>
   </div>
   <div class="mb-3">
     <%= form.label :password_confirmation %>
-    <%= form.password_field :password_confirmation, class: "form-control", placeholder: "password كلمة المرور" %>
+    <%= form.password_field :password_confirmation, class: "form-control", placeholder: "كلمة المرور" %>
   </div>
 
   <div class="mb-3">
-    <%= form.submit "Sign Up حساب جديد", class: "btn btn-primary" %>
+    <%= form.submit "حساب جديد", class: "btn btn-primary" %>
   </div>
 <% end %>
