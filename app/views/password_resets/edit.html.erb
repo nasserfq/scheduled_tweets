@@ -1,4 +1,4 @@
-<h1>Reset your password</h1>
+<h1>إعادة تعيين كلمة المررو</h1>
 
 <%= form_with model: @user, url: password_reset_edit_path(token: params[:token]) do |form| %>
 
@@ -12,14 +12,14 @@
 
   <div class="mb-3">
     <%= form.label :password %>
-    <%= form.password_field :password, class: "form-control", placeholder: "password" %>
+    <%= form.password_field :password, class: "form-control", placeholder: "كلمة المرور" %>
   </div>
   <div class="mb-3">
     <%= form.label :password_confirmation %>
-    <%= form.password_field :password_confirmation, class: "form-control", placeholder: "password" %>
+    <%= form.password_field :password_confirmation, class: "form-control", placeholder: "كلمة المرور" %>
   </div>
 
   <div class="mb-3">
-    <%= form.submit "Reset Password إعادة تعيين كلمة المرور", class: "btn btn-primary" %>
+    <%= form.submit "إعادة تعيين كلمة المرور", class: "btn btn-primary" %>
   </div
 <% end %>
